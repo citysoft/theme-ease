@@ -1,0 +1,220 @@
+/*  ********************************************* HOME J QUERY SLIDER ***********************************************/
+
+
+#cs2_homeSlider {
+	height: 345px;
+	position: relative;
+	text-align: center;
+	width: 910px;
+}
+.cs2_slides {
+	background: none repeat scroll 0 0 #E3E0CD;
+	cursor: pointer;
+	height: 345px;
+	position: relative;
+	width: 910px;
+}
+.cs2_slides div.cs2_homeSlide {
+	background: url("/_data/n_0001/images/loading.gif") no-repeat scroll 296px 121px transparent;
+	display: none;
+	height: 345px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 910px;
+}
+.cs2_slides div.cs2_homeSlide .cs2_slideImage {
+	height: 345px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 910px;
+	z-index: 1;
+}
+.cs2_slidetabs {
+	bottom: 15px;
+	float: left;
+	height: 20px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 20px;
+	z-index: 10;
+}
+.cs2_slidetabs li {
+	float: left;
+}
+.cs2_slidetabs a {
+	background-color: #F1F0E6;
+	color: #969696;
+	display: inline-block;
+	float: left;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 10px;
+	text-decoration: none;
+	width: 25px;
+}
+.cs2_slidetabs a:hover {
+	background: none repeat scroll 0 0 #F7F6F0;
+}
+.cs2_slidetabs a.current {
+	background: none repeat scroll 0 0 #c0e7d7;
+	color: #1C4795;
+}
+.forward, .backward {
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	opacity: 0.4;
+	position: absolute;
+	text-indent: -9999px;
+	top: 160px;
+	width: 30px;
+	z-index: 100;
+}
+.forward {
+	background: url("/_data/n_0001/images/cs2_forwardBackwardSlideButton.png") no-repeat scroll 0 -30px transparent;
+	right: 20px;
+}
+.backward {
+	background: url("/_data/n_0001/images/cs2_forwardBackwardSlideButton.png") no-repeat scroll 0 0 transparent;
+	left: 20px;
+}
+.forward:hover, .backward:hover {
+	opacity: 1;
+}
+.disabled {
+	visibility: hidden !important;
+}
+.cs2_homeSlideCopy {
+	background: none repeat scroll 0 0 transparent;
+	position: absolute;
+	right: 0px;
+	text-align: left;
+	top: 50px;
+	width: 330px;
+	z-index: 100;
+	margin-right: 30px;
+}
+.cs2_homeSlideCopy h2 {
+	color: #79bd9a;
+	font: bold 24px "Georgia, Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-bottom: 15px;
+}
+.cs2_homeSlideCopy p {
+	color: #000;
+	font-size: 17px;
+	line-height: 1.5em;
+}
+.cs2_homeSlideCopy p.quote {
+	color: #000;
+	font: 17px "Georgia, Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+.cs2_homeSlideCopy p.quote span.byline {
+	font-size: 14px;
+}
+.cs2_homeSlideCopy p a {
+	color: #79bd9a;
+	text-decoration: underline;
+}
+.cs2_homeSlideCopy p a:hover {
+	color: #79bd9a;
+	text-decoration: none;
+}
+
+/* ************************************ BOTTOM JQ SLIDER *************************************************** */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	left: -9000px;
+	position: absolute !important;
+}
+#home-slideshow {
+	padding-top: 0px;
+	position: relative;
+}
+.home-slide-images {
+	background: none repeat scroll 0 0 #FFF;
+	cursor: pointer;
+	float: left;
+	height: 270px;
+	margin: 0 0 26px 26px;
+	position: relative;
+	width: 376px;
+}
+.home-slide-images div {
+	display: none;
+	height: 270px;
+	left: 0px;
+	margin-left: 5px;
+	position: absolute;
+	top: 0;
+}
+.home-slide-images img {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+.home-slide-tabs {
+	clear: both;
+	left: 180px;
+	position: absolute;
+	top: 274px;
+}
+.home-slide-tabs a {
+	background: url("/_data/n_0001/images/navigator.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	float: left;
+	font-size: 1px;
+	height: 8px;
+	margin: 3px;
+	width: 8px;
+}
+.home-slide-tabs a:hover {
+	background-position: 0 -8px;
+}
+.home-slide-tabs a.current {
+	background-position: 0 -16px;
+}
+.home-slide-forward, .home-slide-backward {
+	background: url("/_data/n_0001/images/hori_large.png") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	font-size: 1px;
+	height: 30px;
+	position: absolute;
+	text-indent: -9999em;
+	top: 120px;
+	left: 408px;
+	width: 30px;
+	z-index: 20;
+}
+.home-slide-forward {
+	background-position: 0 -30px;
+	right: 15px;
+}
+.home-slide-forward:hover {
+	background-position: -30px -30px;
+}
+.home-slide-forward:active {
+	background-position: -60px -30px;
+}
+.home-slide-backward {
+	left: 0px;
+}
+.home-slide-backward:hover {
+	background-position: -30px 0;
+}
+.home-slide-backward:active {
+	background-position: -60px 0;
+}
+.disabled {
+	visibility: hidden !important;
+}
+.panes {
+	margin: 0;
+	padding: 10px;
+}
