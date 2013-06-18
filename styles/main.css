@@ -1,3 +1,4 @@
+/*  main.css style sheet for CitySoft Ease theme */
 /*  ********************************************* RESET *********************************************** */
 html {
 	margin: 0;
@@ -13,15 +14,19 @@ body {
 	padding: 0;
 	width: 100%;/*background: url("images/master_bg.png") repeat;*/
 }
+
 ul, ol {
 	list-style-position: inside;
 }
+
 a {
 	text-decoration: none;
 }
+
 a img {
 	border: none;
 }
+
 .metaBannerContain {
 	height:45px;
 	background-color:#c0e7d7;
@@ -39,9 +44,11 @@ a img {
 	text-align:right;
 	padding-top:15px
 }
+
 .metaBannerContent a:link, .metaBannerContent a:visited {
 	color:#4D695E;
 }
+
 .metaBannerContent a:hover, .metaBannerContent a:active {
 	color:#4D695E;
 	text-decoration:underline;
@@ -51,19 +58,50 @@ a img {
 	background:url("/_data/n_0001/images/banner_master_bg.png") repeat-x;
 	width:100%;
 }
+
 .headerContain {
 	width:960px;
 	height:145px;
 	margin:auto;
 }
+
 .logoContain {
 	width:260px;
 	float:left;
 }
+
 .taglineContain {
-	width:700px;
+	width:290px;
 	float:left;
 }
+
+.searchContain {
+	width:260px;
+	float:right;
+}
+
+.searchContain form input, #emailsubscription form input, #loginwidget input {
+	background: rgba(255,255,255,0.7);
+	color:#000;
+	padding: 1px 5px;
+}
+
+#searchwidget { 
+	text-align: right; 
+	padding-top: 20px;
+}
+
+#emailsubscription { text-align: right; }
+
+#emailsubscription { 
+	float:right;
+	top: 67px;
+	right: 10px;
+	width: 400px; 
+}
+
+p.emailsubscriptionhead, p.emailsubscriptionfoot { display: none; }
+
 .mainNavBackg {
 	background:url("/_data/n_0001/images/main_nav_bg.png") repeat-x;
 	height:41px;
@@ -72,11 +110,11 @@ a img {
 	border-top: 1px solid #FFF;
 	margin-bottom: 20px;
 }
+
 .navWrap {
 	width:960px;
 	margin:auto;
 }
-
 
 .contentBodyContain {width:1000px; margin:auto; }
 
@@ -87,15 +125,18 @@ a img {
 	padding: 0 0 0 0;
 	border: 1px solid #cbcbcb;
 }
+
 .imageSlideContainer {
 	margin: 24px 0 0 25px;
 	width:935px;
 }
+
 .highlightboxContainer {
 	width:934px;
 	padding: 0 0 26px 26px;
 	margin: 0 0 0 0;
 }
+
 .hm_highlightbox {
 	font: 12px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#000;
@@ -104,13 +145,16 @@ a img {
 	margin: 0 24px 0 0;
 	float:left;
 }
+
 .hm_highlightbox a:link, .hm_highlightbox a:visited {
 	color:#79bd9a;
 }
+
 .hm_highlightbox a:hover, .hm_highlightbox a:active {
 	color:#79bd9a;
 	text-decoration:underline;
 }
+
 .hm_generalContent {
 	font: 12px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#000;
@@ -121,17 +165,21 @@ a img {
 	margin:auto;
 	float:right;
 }
+
 .hm_generalContent a:link, .hm_generalContent a:visited {
 	color:#428ab7;
 }
+
 .hm_generalContent a:hover, .hm_generalContent a:active {
 	color:#428ab7;
 	text-decoration:underline;
 }
+
 .footerContainer {
 	background-color:#e3e0cd;
 	width:100%;
 }
+
 .footer_HighlightboxContainer {
 	height:160px;
 	width:960px;
@@ -140,6 +188,7 @@ a img {
 	text-align:left;
 	padding: 15px 0 0 0;
 }
+
 .footer_SocialContainer {
 	font: 12px/normal Myriad, Arial, Helvetica, sans-serif;
 	line-height: 21px;
@@ -149,15 +198,18 @@ a img {
 	margin:auto;
 	text-align:left;
 }
+
 .footer_SocialContainer a:link, .footer_SocialContainer a:visited {
 	color:#3b3b3b;
 	padding-right:5px;
 	padding-left: 5px;
 }
+
 .footer_SocialContainer a:hover, .footer_SocialContainer a:active {
 	color:#3b3b3b;
 	text-decoration:underline;
 }
+
 .footer_highlightbox {
 	font: 12px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#0b486b;
@@ -166,19 +218,23 @@ a img {
 	margin: 0px 15px 0px 0px;
 	float:left;
 }
+
 .footer_highlightbox a:link, .footer_highlightbox a:visited {
 	color:#FFF;
 }
+
 .footer_highlightbox a:hover, .footer_highlightbox a:active {
 	color:#FFF;
 	text-decoration:underline;
 }
+
 .quotesContainer {
 	width:960px;
 	background-color:#FFF;
 	margin:auto;
 	text-align:left;
 }
+
 .copyright_content {
 	font: 11px/normal Myriad, Arial, Helvetica, sans-serif;
 	color:#9aa0a3;
@@ -186,16 +242,19 @@ a img {
 	margin:auto;
 	text-align:left;
 }
+
 .copyrightContainer {
 	height:40px;
 	padding-top: 25px;
 	background-color:#e3e0cd;
 	width:100%;
 }
+
 .quoteImg {
 	width:150px;
 	float:left;
 }
+
 .clientQuotes {
 	width: 810px;
 	float:right;
@@ -203,29 +262,35 @@ a img {
 	color:#7b7b7b;
 	font-style:italic;
 }
+
 .hm_featuresContainer {
 	width:960px;
 	margin:auto;
 }
+
 .promoBoxHm {
 	background-color:#cccccc;
 	width: 100%;
 	height:125px;
 }
+
 .spotlightMediaBox {
 	width:415px;
 	margin:auto;
 	float:left;
 }
+
 .boxShadowHeader {
 	width:100%;
 	position:fixed;
 	text-align:center;
 }
+
 .boxShadow {
 	width:100%;
 	text-align:center;
 }
+
 .metaHeadSpace {
 	height:45px;
 }
@@ -233,28 +298,31 @@ a img {
 /* ***************************************** BEGIN SITE STYLES ********************************************* */
 /* ********************************************************************************************************* */
 
-
 .hmHighlightBoxTitle {
 	font: 19px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#79bd9a;
 	margin-bottom:6px;
 }
+
 .quotesBoxTitle {
 	font: 19px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#7b7b7b;
 	margin: 0 0 10px 26px;
 }
+
 .taglineTitle {
 	font: 22px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#8ec4ae;
 	font-style:italic;
 	margin: 50px 0 0 0;
 }
+
 .metaHighlightBoxTitle {
 	font: 16px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#FFF;
 	margin: 15px 0 10px 0;
 }
+
 .hmContentTitle {
 	font: 25px/normal Georgia, Myriad, Arial, Helvetica, sans-serif;
 	color:#79bd9a;
@@ -275,6 +343,7 @@ ul.drop a {
 	text-decoration: none;
     padding:5px 0 0 0;
 }
+
 ul.drop, ul.drop li, ul.drop ul {
 	list-style: none;
 	margin: 0;
@@ -284,21 +353,20 @@ ul.drop, ul.drop li, ul.drop ul {
 	color: #797878;
 	height:31px;
 }
+
 ul.drop {
 position: relative;
 	z-index: 597;
 	float: left;
 }
+
 ul.drop li {
 	float: left;
 	line-height: 1.3em;
 	vertical-align: middle;
 	zoom: 1;
-	padding: 5px 10px;
-	
+	padding: 5px 10px;	
 }
-
-
 
 ul.drop li.hover, ul.drop li:hover {
 	position: relative;
@@ -307,11 +375,9 @@ ul.drop li.hover, ul.drop li:hover {
 	background: #8ec4ae;
 }
 
-
-
 ul.drop ul {
-border-right: 0px solid #c3c3c3;
-		visibility: hidden;
+	border-right: 0px solid #c3c3c3;
+	visibility: hidden;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -319,6 +385,7 @@ border-right: 0px solid #c3c3c3;
 	width: 250px;
 	height:40px;
 }
+
 ul.drop ul li {
 	
 	float: none;
@@ -333,13 +400,14 @@ ul.drop ul li {
 	/* For IE 8
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#75000000)";*/
 	
-	
 }
+
 ul.drop ul ul {
 	top: 0px;
 	left: 100%;
 	border-right: 0px solid #fff;
 }
+
 ul.drop li:hover > ul {
 	visibility: visible
 }

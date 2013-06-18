@@ -112,8 +112,73 @@ $(document).ready(function(){
 		    <div class="taglineContain">
 		      <h1 class="taglineTitle"> Mission statement or tagline</h1>
 		    </div>
-		  </div>
-		</div>
+			<!--- Search --->
+	  		<div class="searchContain">
+				<script language="JavaScript" type="text/javascript">
+					// Disable this button and submit form and display message if they are supplied
+					function disableButton (oMyButton, oMyForm, sMessage)
+					{
+						//alert(typeof(sMessage));
+						if (typeof(sMessage)!='undefined')
+						{
+							document.getElementById(sMessage).style.visibility='visible';
+						}
+						oMyButton.disabled=true;
+						if (typeof(oMyForm)=='object') // If a form is supplied, then submit it
+						{
+							oMyForm.submit();
+						}
+					}
+				
+					function stopRKey(evt) {
+					  var evt = (evt) ? evt : ((event) ? event : null);
+					  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null);
+					  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;}
+					}
+				
+					document.onkeypress = stopRKey;
+				</script>
+				
+				<cfparam name="tdClass" default="publicHeader" >
+				<cfparam name="inNavBar" default="0" />
+				<cfparam name="form.searchanyofwords" default=""/>
+				
+				<cfinclude template="../../../act_nodehandeler.cfm" />
+			
+				<div id="searchwidget">
+				<cfoutput>
+					<form name="simpleSearchForm" id="simpleSearchForm" action="#request.self#?fuseaction=simplesearch2.processarguments2" method="post">
+						<input type="text" name="searchanyofwords" value="#FORM.searchanyofwords#" size="15" maxlength="100" class="appInputText" />
+						<input type="button" value="Search" class="appInputButton" onclick="disableButton(this, document.getElementById('simpleSearchForm'), 'processMsg');" /><br />
+						<span id="processMsg" style="color:ff0000;font-weight:bold;font-size:11px;visibility:hidden;">Searching...  May Take A Few Moments</span>
+						<script language="JavaScript" type="text/javascript">
+							document.getElementById('processMsg').style.visibility='hidden';
+						</script>
+					</form>
+				</cfoutput>
+				</div>
+				<!-- End Search Widget -->
+			</div><!-- End Search Contain -->
+ 			<!-- Start Email Subscription Widget-->
+			<cfoutput>
+			<div id="emailsubscription">
+			    <cfif client.userid lte 0>
+					<form name="newsletter" method="post" action="/index.cfm?fuseaction=email.subscribe">
+						<input type="text" class="textfield" value="Email" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value = 'Email';" maxlength="50"  name="email_post">
+				        <input type="text" class="textfield"  value="Zip Code" size="11px" onfocus="if(this.value==this.defaultValue) this.value='';" onblur="if(this.value=='') this.value = 'Zip Code';" maxlength="10"  name="postalcode">
+				        <input type="hidden" value="1" name="EmailRecipientListIDs">
+				        <input type="submit" class="button" value="Join Our Email List" name="submit">
+					</form>
+					<p class="emailsubscriptionfoot"><a href="/index.cfm?pageId=xxx">Optional message / link here</a></p>
+				<cfelse>
+			    	<a href="/index.cfm?fuseaction=email.subscribe" title="Manage my subscriptions">My Subscriptions</a>
+					<p class="emailsubscriptionfoot"><a href="/index.cfm?pageId=xxx">Optional message / link here</a></p>
+			    </cfif>
+			</div>
+			</cfoutput>
+			<!-- End Email Subscription Widget -->
+		  </div><!--- End headerContain --->
+		</div><!--- End headerBGcontainer --->
 		<!-- /END -->
 		<!-- NAV -->
 		<div class="mainNavBackg">
